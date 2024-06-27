@@ -20,7 +20,7 @@ export default function Slug({ current }) {
               </div>
             </div>
             {subCategory.title === "Bericht" ? (
-              <div className="md:grid md:grid-cols-5 gap-5 md:text-sm xl:text-lg 2xl:text-2xl pb-5 md:pb-[7vh] z-10 px-2 pt-4 md:p-5">
+              <div className="md:grid md:grid-cols-5 md:-mx-5 gap-5 md:text-sm xl:text-lg 2xl:text-2xl pb-5 md:pb-[7vh] z-10 px-2 pt-4 md:p-5">
                 {subCategory.content
                     .filter((x) => x.type === "intro")
                     .map((x) => x.text)}

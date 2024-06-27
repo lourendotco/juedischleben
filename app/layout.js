@@ -24,11 +24,6 @@ export default function RootLayout({ children }) {
           <div className="hidden md:block border border-[#444444]/20"></div>
           <div className="hidden md:block border border-[#444444]/20"></div>
         </div>
-        <div className={`w-fit fixed border-b-2 border-x border-gray-400  drop-shadow-md rounded-lg right-5 top-5 z-40 p-0.5 bg-gray-200 font-bold text-lg ${title.className}`}>
-          <button type="button" className="font-bold block">DE</button>
-          <button type="button" className="text-gray-500 block">TR</button>
-          <button type="button" className="text-gray-500">AR</button>
-        </div>
         {children}
       </body>
     </html>

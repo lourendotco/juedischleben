@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* iframe {
+iframe {
   aspect-ratio: 16 / 9;
-  z-index: 40;
-} */
+  z-index: 20;
+}
 
 /* html {
     overflow: hidden;

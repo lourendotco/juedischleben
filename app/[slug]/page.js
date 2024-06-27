@@ -1,9 +1,10 @@
-import { newDB } from "../newDB";
+import { newDB as deutsch } from "../newDB";
 import Slug from "./slug";
 import Menu from "../menu";
 
-export default function Page({ params }) {
-  const content = newDB.find((x) => x.slug === params.slug);
+export default function Page({ params, arabic, turkish }) {
+  
+  const content = deutsch.find((x) => x.slug === params.slug);
 
   const bgColor = content.index ? "#B3C9DD" : "#DBE9F5"
 
@@ -16,5 +17,5 @@ export default function Page({ params }) {
 }
 
 export async function generateStaticParams() {
-  return newDB.map((x) => ({ slug: x.slug }));
+  return deutsch.map((x) => ({ slug: x.slug }));
 }

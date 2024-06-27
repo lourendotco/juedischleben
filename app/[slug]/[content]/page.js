@@ -5,7 +5,7 @@ import Menu from "@/app/menu";
 export default function Page({ params }) {
   return (
     <>
-        <Menu slug={params.slug} bgColor={"white"}  />
+        <Menu slug={params.slug} bgColor={"#f5f5f5"}  />
         <Content params={params} />
     </>
   );

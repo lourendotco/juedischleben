@@ -89,20 +89,20 @@ export default function Home() {
                 Judentum ist seinem Wesen nach vielstimmig.
               </p>
               <p className="text-sm lg:text-base xl:text-lg 2xl:text-[22px] max-w-prose">
-                In hebräischen Druckausgaben von biblischer Büchern und des Talmud steht ein
-                Kerntext in der Mitte, und um ihn herum sind lauter Kommentare
-                platziert. Das sind Anmerkungen zu sprachlichen Besonderheiten
-                oder theologische Auslegungen oder religionsgesetzliche
-                Erörterungen oder Polemiken verschiedener Art. Sie stammen von
-                Rabbinern und Gelehrten (leider kaum Frauen darunter), die sich
-                mit dem Text in der Mitte auseinandergesetzt haben, über
-                Jahrtausende hinweg. Ihre Kommentare widerspiegeln ihre
-                persönlichen Ansichten, die Zeitumstände, unter denen sie gelebt
-                haben, ihr Bemühen, ein lebendiges Judentum zu gestalten. Ihre
-                Äußerungen säumen den Text, als ob die Verfasser persönlich um
-                einen Tisch säßen und die Trennung von Raum und Zeit aufgehoben
-                wäre. Es gibt dabei nur ein Grundprinzip: Man kann sehr
-                verschiedener Meinung sein, aber die Kommentare der anderen
+                In hebräischen Druckausgaben biblischer Büchern und des Talmuds
+                steht ein Kerntext in der Mitte, und um ihn herum sind lauter
+                Kommentare platziert. Das sind Anmerkungen zu sprachlichen
+                Besonderheiten oder theologische Auslegungen oder
+                religionsgesetzliche Erörterungen oder Polemiken verschiedener
+                Art. Sie stammen von Rabbinern und Gelehrten (leider kaum Frauen
+                darunter), die sich mit dem Text in der Mitte auseinandergesetzt
+                haben, über Jahrtausende hinweg. Ihre Kommentare widerspiegeln
+                ihre persönlichen Ansichten, die Zeitumstände, unter denen sie
+                gelebt haben, ihr Bemühen, ein lebendiges Judentum zu gestalten.
+                Ihre Äußerungen säumen den Text, als ob die Verfasser persönlich
+                um einen Tisch säßen und die Trennung von Raum und Zeit
+                aufgehoben wäre. Es gibt dabei nur ein Grundprinzip: Man kann
+                sehr verschiedener Meinung sein, aber die Kommentare der anderen
                 werden nicht ausgelöscht. Doch man kann den eigenen Kommentar
                 dazu schreiben und darin die eigene Sichtweise darlegen. Auf
                 diese Weise ergibt sich ein vielstimmiges, pluralistisches Bild,
@@ -128,7 +128,8 @@ export default function Home() {
                 der Erwachsenenbildung, für Workshops und Projektarbeit, um
                 Judentum kennenzulernen und ja, auch um zu verstehen, wie sehr
                 Antisemitismus das Leben von Jüdinnen und Juden in Deutschland
-                beeinträchtigt.
+                beeinträchtigt. Die Begleittexte der Videos stehen in Deutsch,
+                Türkisch und Arabisch zum Download zur Verfügung.
               </p>
             </div>
           </div>
@@ -171,9 +172,11 @@ export default function Home() {
         <div
           data-section="#B3C9DD"
           ref={targetDivRefs[3]}
-          className="grid grid-flow-row md:flex gap-5 px-5 py-10 md:justify-around items-start md:items-stretch"
+          className="grid md:grid-cols-5 gap-5 px-5 py-10 md:justify-around items-start md:items-stretch"
         >
-          <div className={`flex flex-col bg-gray-100 p-4 md:mx-0 basis-1/6 grow z-10 ${title.className}`}>
+          <div
+            className={`flex flex-col bg-gray-100 p-4 md:mx-0 basis-1/6 grow z-10 ${title.className}`}
+          >
             <div className="text-lg md:text-sm lg:text-lg xl:text-2xl 2xl:text-3xl mb-1 md:mb-6">
               Ein Forschungsprojekt der
             </div>
@@ -181,7 +184,9 @@ export default function Home() {
               <ExportedImage src={Hfjs} alt="HfJS" />
             </Link>
           </div>
-          <div className={`bg-gray-100 flex flex-col p-4 md:mx-0 basis-1/6 grow z-10 ${title.className}`}>
+          <div
+            className={`bg-gray-100 flex flex-col p-4 md:mx-0 basis-1/6 grow z-10 ${title.className}`}
+          >
             <div className="text-lg md:text-sm lg:text-lg xl:text-2xl 2xl:text-3xl">
               Teil des
             </div>
@@ -196,20 +201,33 @@ export default function Home() {
               Forschungsnetzwerk Antisemitismus im 21. Jahrhundert
             </div>
           </div>
-          <div className={`flex flex-col bg-gray-100 md:p-4 md:mx-0 basis-1/6 grow z-10 ${title.className}`}>
+          <div
+            className={`flex flex-col bg-gray-100 md:p-4 md:mx-0 basis-1/6 grow z-10 ${title.className}`}
+          >
             <div className="text-lg md:text-sm lg:text-lg xl:text-2xl 2xl:text-3xl -mb-8 md:mb-0 pt-4 pl-4 md:pt-0 md:pl-0 ">
               Gefördert vom
             </div>
             <ExportedImage src={BMBF} alt="BMBF" />
           </div>
-          <div className="basis-2/6 bg-gray-100 p-5 text-base md:text-xs lg:text-base xl:text-xl 2xl:text-2xl z-10">
-            <p className={`text-lg md:text-sm lg:text-lg xl:text-2xl 2xl:text-3xl mb-2 ${title.className}`}>Impressum:</p>
-            <p>Das Projekt Ritualpraxis wurde verantwortet von:</p>
-            <p>Jessica Hösel und Rabbinerin Dr. Ulrike Offenberg</p>
-            <p>Unter Leitung von Rabbinerin Prof. Dr. Birgit Klein</p>
+          <div className="basis-2/6 md:col-span-2 bg-gray-100 p-5 text-base md:text-xs lg:text-base xl:text-xl 2xl:text-2xl z-10">
+            <p
+              className={`text-lg md:text-sm lg:text-lg xl:text-2xl 2xl:text-3xl mb-2 ${title.className}`}
+            >
+              Impressum:
+            </p>
+            <p>Das Projekt Ritualpraxis wurde durchgeführt von:</p>
+            <p>Jessica Hösel, M.A., und Rabbinerin Dr. Ulrike Offenberg</p>
+            <p>Unter Leitung von Rabb. Prof. Dr. Birgit Klein</p>
             <p>Hochschule für Jüdische Studien Heidelberg</p>
             <p>Landfriedstraße 12, 69117 Heidelberg</p>
-            <p className="mt-2"><span className={`text-lg md:text-sm lg:text-lg xl:text-2xl 2xl:text-3xl ${title.className}`}>Kontakt:</span> <a href="mailto:team@juedischleben.de">team@juedischleben.de</a></p>
+            <p className="mt-2">
+              <span
+                className={`text-lg md:text-sm lg:text-lg xl:text-2xl 2xl:text-3xl ${title.className}`}
+              >
+                Kontakt:
+              </span>{" "}
+              <a href="mailto:team@juedischleben.de">team@juedischleben.de</a>
+            </p>
           </div>
         </div>
       </main>

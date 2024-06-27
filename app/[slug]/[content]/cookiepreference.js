@@ -11,15 +11,20 @@ export default function CookiePreference({ videoId, end }) {
   const [preference, setPreference] = useState(getPreference());
   const [sided, setSided] = useState(false);
   const container = useRef(null);
+  const sideContainer = useRef(null);
 
   useEffect(() => {
-    if (window.screen.width < 768) return
+    if (window.screen.width < 768) return;
     const containerTop = container.current?.offsetTop || 0;
     const containerHeight = container.current?.offsetHeight - 150 || 0;
-    const bottom = end.current?.offsetTop - 220 || 0;
+    const bottom = end.current?.offsetTop || 0;
+    const sidedVideoHeight = ((window.screen.width-120)/5 + 20) * 9 / 16
 
     const handleScroll = () => {
-      if (window.scrollY >= containerTop + containerHeight && window.scrollY < bottom ) {
+      if (
+        window.scrollY >= containerTop + containerHeight &&
+        window.scrollY + containerTop + sidedVideoHeight <= bottom
+      ) {
         setSided(true);
       } else {
         setSided(false);
@@ -66,7 +71,7 @@ export default function CookiePreference({ videoId, end }) {
             sided ? "grid grid-cols-5 gap-5 fixed" : undefined
           }`}
         >
-          <div className="col-span-2 z-50">
+          <div className="col-span-2">
             <div className="aspect-video w-full h-full bg-gray-100">
               {preference ? <Video videoId={videoId} /> : setCookie}
             </div>

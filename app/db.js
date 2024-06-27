@@ -898,15 +898,15 @@ export const db = [
               praktizieren oder tun sie es auf eine andere Weise? Welche
               Erwartungen haben Jüdinnen und Juden an die Mehrheitsgesellschaft,
               um sich akzeptiert zu fühlen?
-              </p>
-              <p className="mt-5">
-                Unsere Erhebung war schon fast zum Abschluss gekommen, als am 7.
-                Oktober 2023 Hamas das furchtbare Massaker im Süden Israels
-                verübte. Anschließend wurden auch hierzulande in bislang
-                unbekanntem Ausmaß antisemitische Töne laut. Wir befragten
-                erneut unsere Interviewpartner:innen, ob und wie sie
-                Antisemitismus nach dem 7. Oktober erlebten.
-              </p>
+            </p>
+            <p className="mt-5">
+              Unsere Erhebung war schon fast zum Abschluss gekommen, als am 7.
+              Oktober 2023 Hamas das furchtbare Massaker im Süden Israels
+              verübte. Anschließend wurden auch hierzulande in bislang
+              unbekanntem Ausmaß antisemitische Töne laut. Wir befragten erneut
+              unsere Interviewpartner:innen, ob und wie sie Antisemitismus nach
+              dem 7. Oktober erlebten.
+            </p>
           </>
         ),
       },
@@ -921,31 +921,47 @@ export const db = [
       {
         type: "intro",
         text: (
-          <div className="col-span-2">
-            <p className={`${title.className}`}>
+          <div className="col-span-2 p-5">
+            <p className={`${title.className} font-semibold mb-2`}>
               Forschungsbericht zur ersten Interviewrunde:
             </p>
             <p>
               Wie sieht Ihre jüdische Lebenspraxis aus? Erfahren Sie deshalb
               negative Reaktionen? Wie gehen Sie damit um?
             </p>
+            <div className="w-full grid grid-cols-2 gap-5">
+              <a href="/pdfs/Report1.pdf"
+                className={`mt-5 p-1 text-center rounded-2xl text-xl lg:text-lg xl:text-xl 2xl:text-2xl shadow-lg active:shadow-none border border-[#d2d2d2] w-full bg-[#f5f5f5]  ${title.className}`}
+              >
+                PDF herunterladen
+              </a>
+            </div>
           </div>
         ),
       },
       {
         type: "intro",
         text: (
-          <div className="col-start-4 col-span-2">
-            <p className={`${title.className}`}>
+          <div className="col-start-4 col-span-2 mt-5 md:mt-0 p-5">
+            <p className={`${title.className} font-semibold mb-2`}>
               Forschungsbericht zur zweiten Interviewrunde:
             </p>
             <p>
               Haben Sie nach dem 7. Oktober Antisemitismus erfahren? Was hat
               sich seither für Sie verändert?
             </p>
+            <div className="w-full grid grid-cols-2 gap-5">
+              <a href="/pdfs/Report2.pdf"
+                className={`mt-5 p-1 text-center rounded-2xl text-xl lg:text-lg xl:text-xl 2xl:text-2xl shadow-lg active:shadow-none border border-[#d2d2d2] w-full bg-[#f5f5f5]  ${title.className}`}
+              >
+              
+                PDF herunterladen
+              
+              </a>
+            </div>
           </div>
         ),
       },
     ],
-  }
+  },
 ];
